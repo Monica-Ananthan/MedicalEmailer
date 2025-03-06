@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Medical Emailer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            object-fit: contain;
+        }
+        .banner-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            font-size: 21px;
+            color: #434343;
+            margin: 5px 0;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            white-space: normal;
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+            td {
+                padding: 0 !important;
+                display: block;
+                width: 100%;
+            }
+            img {
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 18px !important;
+                padding: 10px 25px;
+            }
+            p {
+                font-size: 16px !important;
+                padding-top: 10px !important;
+                padding-right: 25px !important;
+                padding-bottom: 10px !important;
+                padding-left: 25px !important;
+            }
+            li {
+                text-align: left;
+                padding-right: 10px !important;
+                margin-left: 18px;
+                font-size: 16px !important;
+            }
+            .box-wrap {
+                display: flex;
+                justify-content: center;
+            }
+            .box-wrap td:first-child {
+                width: 40%;
+                margin-left: 20px;
+                margin-top: 15px;
+            }
+            .smile-box {
+                margin-top: 16px;
+            }
+
+            .smile-box span {
+                font-size: 14px !important;
+            }
+
+            .smile-box img {
+                margin-bottom: 5px;
+            }
+
+            .address-box p {
+                padding: 0 !important;
+            }
+
+            .address-box div {
+                width: 90%;
+                gap: 15px !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .ptb {
+                padding-bottom: 0 !important;
+                padding-top: 0 !important;
+            }
+
+            .mb {
+                margin-bottom: 25px;
+            }
+
+            .mt {
+                margin-top: 20px;
+            }
+
+            .scan-box {
+                gap: 10px !important;
+            }
+
+            .scan-box img {
+                width: 100px !important;
+            }
+
+            .address-box a,
+            .scan-box a {
+                font-size: 16px !important;
+            }
+
+            .scan-box p {
+                padding-bottom: 0 !important;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td colspan="2" style="padding:0;">
+                <img src="assets/images/banner.png" alt="Medical Banner" class="banner-img">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="left" style="padding-left:60px; padding-right:60px; padding-top:60px;">
+                <p style="padding-bottom: 10px; font-family: Tahoma, sans-serif; font-size:20px;">Dear Dr.
+                    %customer.firstname% %customer.lastname %</p>
+                <p style=" font-family: Tahoma, sans-serif; font-size:20px;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"
+                style="padding-left:60px; padding-right:60px; font-family: Tahoma, sans-serif; font-size:20px;">
+                <h1 style="color:#23004C; font-family: Tahoma, sans-serif; font-size:20px; margin-bottom: 0;">Key
+                    highlights of the
+                    presentation</h1>
+            </td>
+        </tr>
+        <tr class="box-wrap">
+            <td width="20%" style="padding-left:60px;">
+                <img src="assets/images/IconOne.webp" alt="Medical Icon">
+            </td>
+            <td width="80%" style="padding-right:65px; padding-left:0;">
+                <p style=" font-family: Tahoma, sans-serif; font-size:20px;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the
+                    1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book.</p>
+            </td>
+        </tr>
+        <tr class="box-wrap">
+            <td width="20%" style="padding-left:65px;">
+                <img style="padding-top:10px;" src="assets/images/IconTwo.webp" alt="Medical Icon">
+            </td>
+            <td width="80%" style="padding-right:65px; padding-left:0;">
+                <p style=" font-family: Tahoma, sans-serif; font-size:20px;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the
+                    1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book.</p>
+            </td>
+        </tr>
+        <tr class="box-wrap">
+            <td width="20%" style="padding-left:60px;">
+                <img src="assets/images/IconThree.webp" alt="Medical Icon">
+            </td>
+            <td width="80%" style="padding-right:65px; padding-left:0;">
+                <p style=" font-family: Tahoma, sans-serif; font-size:20px;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the
+                    1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book.</p>
+            </td>
+        </tr>
+        <tr class="box-wrap">
+            <td width="20%" style="padding-left:60px;">
+                <img src="assets/images/IconFour.webp" alt="Medical Icon">
+            </td>
+            <td width="80%" style="padding-right:65px; padding-left:0;">
+                <p style=" font-family: Tahoma, sans-serif; font-size:20px; color:#000000;">Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+                <ul style="margin-top: 0;">
+                    <li style=" font-family: Tahoma, sans-serif; font-size:20px; color:#8438BA;"><span
+                            style="color:#000000;">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry</span></li>
+                    <li style=" font-family: Tahoma, sans-serif; font-size:20px; color:#8438BA;"><span
+                            style="color:#000000;">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry</span></li>
+                    <li style=" font-family: Tahoma, sans-serif; font-size:20px; color:#8438BA;"><span
+                            style="color:#000000;">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry</span></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <a href="https://www.youtube.com/watch?v=UWTfMHzKT10" target="_blank">
+                    <img src="assets/images/VideoThumbnail.webp"
+                        style="display: block; border: none; width:500px; height: auto;" alt="Medical Video">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding:0; text-align: center;">
+                <a href="https://www.sanofi.com/en" target="_blank" style="text-decoration: none;">
+                    <p
+                        style="text-align: center; font-family: Tahoma, sans-serif; font-size:21px; color:#7A00E7; font-weight: 600;">
+                        Click
+                        to
+                        know more</p>
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="padding-left:60px; padding-right:60px; text-align: left;">
+                <p style="font-family: Tahoma, sans-serif; font-size: 21px; padding-bottom: 15px;">If you have any
+                    questions, please don’t
+                    hesitate to let me know.</p>
+                <p class="ptb" style="font-family: Tahoma, sans-serif; font-size: 21px;">Yours sincerely,</p>
+                <p class="ptb" style="font-family: Tahoma, sans-serif; font-size: 21px;">%employee_name%</p>
+                <p class="ptb" style="font-family: Tahoma, sans-serif; font-size: 21px;">Sanofi</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"
+                style="padding-top:15px; padding-left:60px; padding-right:60px; text-align: left; padding-bottom: 35px;">
+                <p style="font-family: Tahoma, sans-serif; font-size: 18px;"><strong>Abbreviations:</strong> Lorem Ipsum
+                    is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown
+                    printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </td>
+        </tr>
+        <tr style="background-color: #F4F2F6;">
+            <td colspan="2" class="mt"
+                style="padding-top:30px; padding-left:60px; padding-right:60px; padding-bottom: 10px;">
+                <p
+                    style="color:#23004C; font-family: Tahoma, sans-serif; font-size: 18px; font-weight: 600; margin: 0; text-align: center;">
+                    How would you rate the content
+                    of this email?</p>
+            </td>
+        </tr>
+        <tr style="background-color: #F4F2F6;">
+            <td colspan="7" align="center" style="text-align: center; white-space: nowrap;" class="smile-box">
+                <a href="https://www.sanofi.com/en" target="_blank" style="text-decoration: none;">
+                    <img src="assets/images/SmileOne.webp" alt="Rating Icon"
+                        style="width:35px;height:auto; display: inline-block; vertical-align: middle; margin-right:2px;">
+                </a>
+                <a href="https://www.sanofi.com/en" target="_blank" style="text-decoration: none;">
+                    <img src="assets/images/SmileTwo.webp" alt="Rating Icon"
+                        style="width:35px;height:auto; display: inline-block; vertical-align: middle; margin-right:2px;">
+                </a>
+                <a href="https://www.sanofi.com/en" target="_blank" style="text-decoration: none;">
+                    <img src="assets/images/SmileThree.webp" alt="Rating Icon"
+                        style="width:35px;height:auto; display: inline-block; vertical-align: middle; margin-right:2px;">
+                </a>
+                <a href="https://www.sanofi.com/en" target="_blank" style="text-decoration: none;">
+                    <img src="assets/images/SmileFour.webp" alt="Rating Icon"
+                        style="width:35px;height:auto; display: inline-block; vertical-align: middle; margin-right:2px;">
+                </a>
+                <a href="https://www.sanofi.com/en" target="_blank" style="text-decoration: none;">
+                    <img src="assets/images/SmileFive.webp" alt="Rating Icon"
+                        style="width:35px;height:auto; display: inline-block; vertical-align: middle; margin-right:2px;">
+                </a>
+                <a href="https://www.sanofi.com/en" target="_blank" style="text-decoration: none;">
+                    <img src="assets/images/SmileSix.webp" alt="Rating Icon"
+                        style="width:35px;height:auto; display: inline-block; vertical-align: middle; margin-right:2px;">
+                </a>
+                <a href="https://www.sanofi.com/en" target="_blank" style="text-decoration: none;">
+                    <img src="assets/images/SmileSeven.webp" alt="Rating Icon"
+                        style="width:35px;height:auto; display: inline-block; vertical-align: middle; margin-right:2px;">
+                </a>
+                <br>
+                <span
+                    style="font-family: Tahoma, sans-serif; font-size: 18px; margin-right: 83px; line-height: 2.5; color: #434343;">Very
+                    Poor</span>
+                <span
+                    style="font-family: Tahoma, sans-serif; font-size: 18px; margin-left: 83px; line-height: 2.5; color: #434343;">Excellent</span>
+            </td>
+        </tr>
+
+        <tr style="background-color: #F4F2F6;">
+            <td colspan="2" class="mb mt"
+                style="padding-top:15px; padding-left:60px; padding-right:60px; padding-bottom: 10px;">
+                <p
+                    style="color:#23004C;font-family: Tahoma, sans-serif; font-size: 18px; font-weight: 600; padding-bottom: 15px; text-align: center;">
+                    For the full prescribing information, please scan the QR Code or visit the link provided.
+                </p>
+            </td>
+        </tr>
+
+        <tr style="background-color: #F4F2F6;">
+            <td colspan="7" align="center" style="text-align: center; white-space: nowrap;">
+                <div class="scan-box" style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <a href="https://www.sanofi.com/en" target="_blank">
+                            <img src="assets/images/ScanOne.webp" alt="Rating Icon"
+                                style="width:140px;height:auto; display: block; margin: 0 auto; border: 1px solid #23004C;">
+                        </a>
+                        <p
+                            style="padding-top: 15px; font-family: Tahoma, sans-serif; font-size: 21px; font-weight: 600; color:#000000;">
+                            Product name</p>
+                        <a href="https://www.sanofi.com/en" target="_blank"
+                            style="font-size: 18px; color:#8A2AE6; text-decoration: none;">www.something.com</a>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="https://www.sanofi.com/en" target="_blank">
+                            <img src="assets/images/ScanOne.webp" alt="Rating Icon"
+                                style="width:140px;height:auto; display: block; margin: 0 auto; border: 1px solid #23004C;">
+                        </a>
+                        <p
+                            style="padding-top: 15px; font-family: Tahoma, sans-serif; font-size: 21px;font-weight: 600; color:#000000;">
+                            Product name</p>
+                        <a href="https://www.sanofi.com/en" target="_blank"
+                            style="font-size: 18px; color:#8A2AE6; text-decoration: none;">www.something.com</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr style="background-color: #F4F2F6;">
+            <td colspan="2" style="padding-top:25px; padding-left:60px; padding-right:60px; padding-bottom: 0;">
+                <p class="mt"
+                    style="color: #23004C;font-family: Tahoma, sans-serif; font-size: 18px; font-weight: 600; text-align: center;">
+                    Full prescribing information is also available upon request from
+                </p>
+            </td>
+        </tr>
+
+        <tr style="background-color: #F4F2F6;">
+            <td colspan="7" align="center" class="address-box mb"
+                style="text-align: center; white-space: nowrap; padding-bottom: 32px; padding-left: 60px;">
+                <div
+                    style="display: flex; justify-content: space-between; gap: 50px; flex-wrap: wrap; align-items: start; text-align: left;">
+                    <div style="flex: 1;">
+                        <p style="color: #23004C; font-family: Tahoma, sans-serif; font-size: 18px; font-weight: 600;">
+                            Sanofi-aventis (Malaysia) Sdn Bhd (334110-P)
+                        </p>
+                        <p style="color: #23004C; font-family: Tahoma, sans-serif; font-size:18px;">
+                            Unit TB-18-1, Level 18, Tower B, Plaza 33,
+                        </p>
+                        <p style="color: #23004C; font-family: Tahoma, sans-serif; font-size:18px;">
+                            No. 1 Jalan Kemajuan, Seksyen 13, 46200 Petaling Jaya,
+                        </p>
+                        <p style="color: #23004C; font-family: Tahoma, sans-serif; font-size:18px;">
+                            Selangor Darul Ehsan, Malaysia.
+                        </p>
+                        <p style="color: #23004C; font-family: Tahoma, sans-serif; font-size:18px;">
+                            Tel: +603 7651 0800, Fax: +603 7651 0805
+                        </p>
+                        <a href="https://www.sanofi.com/en" target="_blank"
+                            style="font-size:18px; color:#23004C; text-decoration: none;">www.something.com</a>
+                    </div>
+
+                    <div style="flex: 1;">
+                        <p style="color:#23004C; font-family: Tahoma, sans-serif; font-size: 18px; font-weight: 600;">
+                            Sanofi-aventis Singapore Pte Ltd
+                        </p>
+                        <p style="color:#23004C; font-family: Tahoma, sans-serif; font-size:18px;">
+                            38 Beach Road #18-11,
+                        </p>
+                        <p style="color:#23004C; font-family: Tahoma, sans-serif; font-size:18px;">
+                            South Beach Tower,
+                        </p>
+                        <p style="color:#23004C; font-family: Tahoma, sans-serif; font-size:18px;">
+                            Singapore 189767.
+                        </p>
+                        <p style="color:#23004C; font-family: Tahoma, sans-serif; font-size:18px;">
+                            Tel: +65 6226 3836, Fax: +65 6535 5836
+                        </p>
+                        <a href="https://www.sanofi.com/en" target="_blank"
+                            style="font-size:18px; color:#23004C; text-decoration: none;">www.something.com</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr style="background-color: #EBEBEB;">
+            <td colspan="2" align="center" style="border-top: 2px solid #23004C; border-bottom: 5px solid #23004C;">
+                <p style="font-family:Tahoma, sans-serif; font-size: 21px; color:#000000;">For Healthcare professionals
+                    only</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
